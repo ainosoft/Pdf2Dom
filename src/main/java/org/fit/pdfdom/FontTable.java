@@ -193,7 +193,7 @@ public class FontTable {
 			// Likely Bare CFF which needs to be converted to a font supported by browsers, can be
 			// other font types which are not yet supported.
 			try {
-				FVFont font = FontVerter.convertFont(fontFile.toByteArray(), FontVerter.FontFormat.WOFF1);
+				FVFont font = FontVerter.convertFont(fontFile.toByteArray(), FontVerter.FontFormat.WOFF2);
 				mimeType = "application/x-font-woff";
 				fileEnding = font.getProperties().getFileEnding();
 
